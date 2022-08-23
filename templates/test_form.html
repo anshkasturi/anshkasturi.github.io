@@ -1,0 +1,30 @@
+{% from "_render_field.html" import render_field %}
+<html>
+    <body>
+        Hello World
+        <form method="POST" action="{{ url_for('home') }}">
+
+            {{ form.csrf_token }}
+
+            {{render_field(form.randomize) }}
+
+            {{ render_field(form.low_rating) }}
+
+            {{ render_field(form.high_rating) }}
+
+            {{ render_field(form.number_of_teams) }}
+
+            <!-- {{ form.randomize.label }}
+            {{ form.randomize }}
+            {{ form.low_rating.label }}
+            {{ form.low_rating }}
+            {{ form.high_rating.label }}
+            {{ form.high_rating }}
+            {{ form.number_of_teams.label }}
+            {{ form.number_of_teams }} -->
+
+
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>

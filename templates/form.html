@@ -1,0 +1,24 @@
+<html>
+  <body>
+    Hello World<br />
+    Here is my FIFA 21 Team Picker<br />
+    <form method="POST">
+      <label for="randomized?">Randomize? </label>
+      <input
+        type="checkbox"
+        name="randomize"
+        value="yes"
+        id="randomized?"
+        min="10"
+        max="99"
+      /><br />
+      Enter the rating above which you would like random team(s):
+      <input type="number" name="rating-low" value="0"/><br />
+      Enter the rating above which you would like random team(s):
+      <input type="number" name="rating-high" value="99" /><br />
+      Enter the number of random teams you would like:
+      <input type="number" name="number-teams" min="1" value="1" /><br />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
